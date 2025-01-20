@@ -221,7 +221,7 @@ const App = () => {
     const getCellContent = () => {
       if (!cell.isRevealed) return '';
       if (cell.isBee) return '💣';
-      if (cell.isCoin) return   <img src="/src/coin/coin.svg" alt="Coin" />;
+      if (cell.isCoin) return   <img width={20} src="/coin.svg" alt="Coin" />;
       return cell.neighborCount || '';
     };
 
@@ -259,7 +259,7 @@ const App = () => {
 
           <div className="flex items-start gap-2">
             <div className="text-white text-lg flex items-center gap-2">
-              <img width={20} src="/src/coin/coin.svg" alt="Coin" />
+            <img width={20} src="/coin.svg" alt="Coin" />
               <span>Collected: {coinsCollected}</span>
             </div>
           </div>
